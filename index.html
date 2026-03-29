@@ -8,6 +8,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#080810;color:#e4e4e7;font-family:'DM Sans',sans-serif;line-height:1.6}
 a{color:inherit;text-decoration:none}
+
 .nav{position:sticky;top:0;z-index:99;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;background:rgba(8,8,16,0.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,255,136,0.08)}
 .logo{font-family:'JetBrains Mono',monospace;font-size:.95rem;color:#00ff88;font-weight:700}
 .logo span{color:#71717a;font-weight:400}
@@ -16,7 +17,9 @@ a{color:inherit;text-decoration:none}
 .nav-r{display:flex;gap:4px}
 .nav-r a{font-family:'JetBrains Mono',monospace;font-size:.72rem;padding:6px 12px;border-radius:5px;color:#a1a1aa;cursor:pointer;transition:.2s}
 .nav-r a:hover{color:#00ff88;background:rgba(0,255,136,0.06)}
+
 .wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+
 .hero{padding:90px 0 50px;position:relative}
 .htag{display:inline-flex;align-items:center;gap:7px;font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#00ff88;padding:5px 12px;border:1px solid rgba(0,255,136,0.2);border-radius:50px;margin-bottom:24px;letter-spacing:.8px;text-transform:uppercase}
 .dot{width:6px;height:6px;background:#00ff88;border-radius:50%;box-shadow:0 0 6px #00ff88}
@@ -24,10 +27,11 @@ a{color:inherit;text-decoration:none}
 .hero p{font-size:1.05rem;color:#a1a1aa;max-width:500px;margin-bottom:32px;line-height:1.7}
 .hero p b{color:#00ff88}
 .btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:44px}
-.bp{display:inline-flex;padding:12px 22px;background:#00ff88;color:#080810;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.8rem;border-radius:7px;border:2px solid #00ff88;transition:.2s;cursor:pointer}
+.bp{display:inline-flex;padding:12px 22px;background:#00ff88;color:#080810;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.8rem;border-radius:7px;border:2px solid #00ff88;transition:.2s}
 .bp:hover{background:transparent;color:#00ff88}
 .bs{display:inline-flex;padding:12px 22px;color:#e4e4e7;font-family:'JetBrains Mono',monospace;font-size:.8rem;border-radius:7px;border:1px solid #1e1e2e;transition:.2s;cursor:pointer}
 .bs:hover{border-color:#00e5ff;color:#00e5ff}
+
 .term{background:#0e0e1a;border:1px solid #1e1e2e;border-radius:10px;overflow:hidden;margin-bottom:20px}
 .tbar{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#161625;border-bottom:1px solid #1e1e2e}
 .tdi{width:10px;height:10px;border-radius:50%}
@@ -35,16 +39,19 @@ a{color:inherit;text-decoration:none}
 .ttl{flex:1;text-align:center;font-family:'JetBrains Mono',monospace;font-size:.65rem;color:#71717a}
 .tbody{padding:16px;font-family:'JetBrains Mono',monospace;font-size:.75rem;line-height:2;color:#a1a1aa}
 .cg{color:#00ff88}.ccy{color:#00e5ff}.co{color:#ff6b35}.cd{color:#71717a}
+
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #1e1e2e;border-bottom:1px solid #1e1e2e;margin-bottom:0}
 .st{text-align:center;padding:24px 12px;border-right:1px solid #1e1e2e}
 .st:last-child{border-right:none}
 .sn{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:#00ff88}
 .sl{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:#71717a;margin-top:6px;text-transform:uppercase;letter-spacing:1.2px}
+
 .sec{padding:80px 0}
 .sec.dark{background:#0e0e1a}
 .lab{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#00ff88;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:12px}
 .lab::before{content:'-- '}
 .stit{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:700;margin-bottom:36px;color:#fff}
+
 .agrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .atxt p{color:#a1a1aa;margin-bottom:14px;font-size:.98rem}
 .atxt b{color:#e4e4e7}
@@ -58,6 +65,7 @@ a{color:inherit;text-decoration:none}
 .iv{font-size:.85rem;color:#e4e4e7;text-align:right}
 .iv a{color:#00e5ff}
 .iv a:hover{text-decoration:underline}
+
 .tl{position:relative;border-left:2px solid;border-image:linear-gradient(to bottom,#00ff88,#00e5ff,#a855f7) 1}
 .tli{position:relative;padding:0 0 40px 32px}
 .tli:last-child{padding-bottom:0}
@@ -71,6 +79,7 @@ a{color:inherit;text-decoration:none}
 .tlp{list-style:none;margin-top:12px}
 .tlp li{padding-left:16px;margin-bottom:8px;color:#a1a1aa;font-size:.88rem;line-height:1.6;position:relative}
 .tlp li::before{content:'>';position:absolute;left:0;color:#00ff88;font-family:'JetBrains Mono',monospace}
+
 .pgrid{display:grid;gap:16px}
 .pc{background:#0e0e1a;border:1px solid #1e1e2e;border-radius:10px;padding:24px;transition:.25s}
 .pc:hover{border-color:rgba(0,255,136,0.2);transform:translateY(-2px)}
@@ -80,6 +89,7 @@ a{color:inherit;text-decoration:none}
 .pde{color:#a1a1aa;margin-bottom:16px;font-size:.88rem;line-height:1.65}
 .ptags{display:flex;gap:6px;flex-wrap:wrap}
 .tg2{font-family:'JetBrains Mono',monospace;font-size:.65rem;padding:3px 9px;border-radius:4px;background:rgba(0,255,136,0.06);color:#00ff88;border:1px solid rgba(0,255,136,0.1)}
+
 .sgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .sc{background:#080810;border:1px solid #1e1e2e;border-radius:10px;padding:20px;transition:.2s}
 .sc:hover{border-color:rgba(0,255,136,0.12)}
@@ -87,6 +97,7 @@ a{color:inherit;text-decoration:none}
 .si{display:flex;flex-wrap:wrap;gap:6px}
 .sp{font-size:.8rem;padding:4px 11px;border-radius:5px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);color:#a1a1aa;transition:.2s}
 .sp:hover{border-color:#00ff88;color:#00ff88}
+
 .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .cc2{display:flex;align-items:center;gap:12px;background:#0e0e1a;border:1px solid #1e1e2e;border-radius:8px;padding:16px 18px;transition:.2s;text-decoration:none;color:#e4e4e7}
 .cc2:hover{border-color:rgba(0,229,255,0.2);transform:translateX(3px)}
@@ -96,15 +107,18 @@ a{color:inherit;text-decoration:none}
 .aw-icon{background:rgba(255,107,53,0.07);border:1px solid rgba(255,107,53,0.12)}
 .aw-card{border:1px solid #1e1e2e}
 .aw-card:hover{border-color:rgba(255,107,53,0.25);transform:translateX(3px)}
+
 .cbox{background:#080810;border:1px solid #1e1e2e;border-radius:14px;padding:48px;text-align:center}
 .cbox h2{font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:#fff;margin-bottom:12px}
 .cbox>p{color:#a1a1aa;margin-bottom:28px}
 .cls{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.cl{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:.8rem;border:1px solid #1e1e2e;color:#e4e4e7;transition:.2s;cursor:pointer}
+.cl{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:.8rem;border:1px solid #1e1e2e;color:#e4e4e7;transition:.2s}
 .cl:hover{border-color:#00ff88;color:#00ff88;background:rgba(0,255,136,0.04)}
+
 .foot{padding:24px 28px;border-top:1px solid #1e1e2e;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#71717a;flex-wrap:wrap;gap:10px}
 .foot a{color:#00ff88;margin-left:14px;cursor:pointer}
 .foot a:hover{text-decoration:underline}
+
 @media(max-width:768px){
   .nav-r{display:none}
   .hero h1{font-size:2.4rem}
@@ -136,7 +150,7 @@ a{color:inherit;text-decoration:none}
     <h1>I build<br>infrastructure<br>that scales.</h1>
     <p><b>DevOps Engineer</b> crafting CI/CD pipelines, containerized deployments, and cloud infrastructure on AWS — with zero-downtime, every time.</p>
     <div class="btns">
-      <a class="bp" onclick="window.open("https://mail.google.com/mail/?view=cm&to=Shubhangtripathi809@gmail.com""onclick="window.open('https://mail.google.com/mail/?view=cm&to=Shubhangtripathi809@gmail.com','_blank')">Get in Touch</a>
+      <a href="mailto:Shubhangtripathi809@gmail.com" class="bp">Get in Touch</a>
       <a class="bs" onclick="document.getElementById('proj').scrollIntoView({behavior:'smooth'})">View Projects</a>
     </div>
     <div class="term">
@@ -161,6 +175,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
+<!-- ABOUT -->
 <div class="sec" id="about">
   <div class="wrap">
     <div class="lab">About</div>
@@ -175,7 +190,7 @@ a{color:inherit;text-decoration:none}
         <h3>// Quick Info</h3>
         <div class="ir"><span class="ik">Name</span><span class="iv">Shubhang Tripathi</span></div>
         <div class="ir"><span class="ik">Location</span><span class="iv">Noida, UP, India</span></div>
-        <div class="ir"><span class="ik">Email</span><span class="iv"><a onclick="window.open("https://mail.google.com/mail/?view=cm&to=Shubhangtripathi809@gmail.com";return false" style="cursor:pointer" onclick="window.open("https://mail.google.com/mail/?view=cm&to=Shubhangtripathi809@gmail.com","_blank");return false">Shubhangtripathi809@gmail.com</a></span></div>
+        <div class="ir"><span class="ik">Email</span><span class="iv"><a href="mailto:Shubhangtripathi809@gmail.com">Shubhangtripathi809@gmail.com</a></span></div>
         <div class="ir"><span class="ik">Phone</span><span class="iv"><a href="tel:+919555986795">+91 9555986795</a></span></div>
         <div class="ir"><span class="ik">LinkedIn</span><span class="iv"><a href="https://www.linkedin.com/in/shubhang-tripathi-44a81525b" target="_blank">LinkedIn Profile</a></span></div>
         <div class="ir"><span class="ik">GitHub</span><span class="iv"><a href="https://github.com/Shubhangtripathi809" target="_blank">GitHub Profile</a></span></div>
@@ -185,6 +200,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
+<!-- EXPERIENCE -->
 <div class="sec dark" id="exp">
   <div class="wrap">
     <div class="lab">Experience</div>
@@ -220,6 +236,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
+<!-- PROJECTS -->
 <div class="sec" id="proj">
   <div class="wrap">
     <div class="lab">Projects</div>
@@ -244,6 +261,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
+<!-- SKILLS -->
 <div class="sec dark" id="skills">
   <div class="wrap">
     <div class="lab">Skills</div>
@@ -269,6 +287,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
+<!-- CERTIFICATIONS -->
 <div class="sec" id="certs">
   <div class="wrap">
     <div class="lab">Certifications</div>
@@ -282,6 +301,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
+<!-- AWARDS (separate section) -->
 <div class="sec dark" id="awards">
   <div class="wrap">
     <div class="lab">Honors and Awards</div>
@@ -293,13 +313,14 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
+<!-- CONTACT -->
 <div class="sec" id="contact">
   <div class="wrap">
     <div class="cbox">
       <h2>Let's build something together.</h2>
       <p>Got a DevOps challenge or a team that needs scaling? Let's talk.</p>
       <div class="cls">
-        <a class="cl" onclick="window.open("https://mail.google.com/mail/?view=cm&to=Shubhangtripathi809@gmail.com"">&#9993; Email</a>
+        <a href="mailto:Shubhangtripathi809@gmail.com" class="cl">&#9993; Email</a>
         <a href="tel:+919555986795" class="cl">&#9742; +91 9555986795</a>
         <a href="https://www.linkedin.com/in/shubhang-tripathi-44a81525b" target="_blank" class="cl">in LinkedIn</a>
         <a href="https://github.com/Shubhangtripathi809" target="_blank" class="cl">&#8984; GitHub</a>
@@ -317,8 +338,5 @@ a{color:inherit;text-decoration:none}
   </div>
 </div>
 
-<script>
-// Build email via JS so Cloudflare cannot obfuscate it
-</script>
 </body>
 </html>
