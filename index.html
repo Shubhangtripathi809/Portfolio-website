@@ -1,0 +1,342 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubhang Tripathi</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080810;color:#e4e4e7;font-family:'DM Sans',sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+
+.nav{position:sticky;top:0;z-index:99;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;background:rgba(8,8,16,0.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,255,136,0.08)}
+.logo{font-family:'JetBrains Mono',monospace;font-size:.95rem;color:#00ff88;font-weight:700}
+.logo span{color:#71717a;font-weight:400}
+.blink{display:inline-block;width:7px;height:15px;background:#00ff88;animation:b 1s step-end infinite;vertical-align:middle;margin-left:4px}
+@keyframes b{50%{opacity:0}}
+.nav-r{display:flex;gap:4px}
+.nav-r a{font-family:'JetBrains Mono',monospace;font-size:.72rem;padding:6px 12px;border-radius:5px;color:#a1a1aa;cursor:pointer;transition:.2s}
+.nav-r a:hover{color:#00ff88;background:rgba(0,255,136,0.06)}
+
+.wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+
+.hero{padding:90px 0 50px;position:relative}
+.htag{display:inline-flex;align-items:center;gap:7px;font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#00ff88;padding:5px 12px;border:1px solid rgba(0,255,136,0.2);border-radius:50px;margin-bottom:24px;letter-spacing:.8px;text-transform:uppercase}
+.dot{width:6px;height:6px;background:#00ff88;border-radius:50%;box-shadow:0 0 6px #00ff88}
+.hero h1{font-family:'Syne',sans-serif;font-size:3.8rem;font-weight:800;line-height:1.05;margin-bottom:20px;background:linear-gradient(135deg,#fff,#a1a1aa 60%,#00ff88);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:1.05rem;color:#a1a1aa;max-width:500px;margin-bottom:32px;line-height:1.7}
+.hero p b{color:#00ff88}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:44px}
+.bp{display:inline-flex;padding:12px 22px;background:#00ff88;color:#080810;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.8rem;border-radius:7px;border:2px solid #00ff88;transition:.2s}
+.bp:hover{background:transparent;color:#00ff88}
+.bs{display:inline-flex;padding:12px 22px;color:#e4e4e7;font-family:'JetBrains Mono',monospace;font-size:.8rem;border-radius:7px;border:1px solid #1e1e2e;transition:.2s;cursor:pointer}
+.bs:hover{border-color:#00e5ff;color:#00e5ff}
+
+.term{background:#0e0e1a;border:1px solid #1e1e2e;border-radius:10px;overflow:hidden;margin-bottom:20px}
+.tbar{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#161625;border-bottom:1px solid #1e1e2e}
+.tdi{width:10px;height:10px;border-radius:50%}
+.tr{background:#ff5f57}.ty{background:#febc2e}.tgg{background:#28c840}
+.ttl{flex:1;text-align:center;font-family:'JetBrains Mono',monospace;font-size:.65rem;color:#71717a}
+.tbody{padding:16px;font-family:'JetBrains Mono',monospace;font-size:.75rem;line-height:2;color:#a1a1aa}
+.cg{color:#00ff88}.ccy{color:#00e5ff}.co{color:#ff6b35}.cd{color:#71717a}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #1e1e2e;border-bottom:1px solid #1e1e2e;margin-bottom:0}
+.st{text-align:center;padding:24px 12px;border-right:1px solid #1e1e2e}
+.st:last-child{border-right:none}
+.sn{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:#00ff88}
+.sl{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:#71717a;margin-top:6px;text-transform:uppercase;letter-spacing:1.2px}
+
+.sec{padding:80px 0}
+.sec.dark{background:#0e0e1a}
+.lab{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#00ff88;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:12px}
+.lab::before{content:'-- '}
+.stit{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:700;margin-bottom:36px;color:#fff}
+
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.atxt p{color:#a1a1aa;margin-bottom:14px;font-size:.98rem}
+.atxt b{color:#e4e4e7}
+.icard{background:#0e0e1a;border:1px solid #1e1e2e;border-radius:10px;padding:24px;position:relative}
+.sec.dark .icard{background:#080810}
+.icard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#00ff88,#00e5ff,#a855f7)}
+.icard h3{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#00ff88;margin-bottom:14px;text-transform:uppercase;letter-spacing:1px}
+.ir{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.ir:last-child{border-bottom:none}
+.ik{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#71717a}
+.iv{font-size:.85rem;color:#e4e4e7;text-align:right}
+.iv a{color:#00e5ff}
+.iv a:hover{text-decoration:underline}
+
+.tl{position:relative;border-left:2px solid;border-image:linear-gradient(to bottom,#00ff88,#00e5ff,#a855f7) 1}
+.tli{position:relative;padding:0 0 40px 32px}
+.tli:last-child{padding-bottom:0}
+.tli::before{content:'';position:absolute;left:-7px;top:5px;width:12px;height:12px;background:#0e0e1a;border:2px solid #00ff88;border-radius:50%}
+.tli.act::before{background:#00ff88;box-shadow:0 0 10px rgba(0,255,136,0.4)}
+.tlh{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.tlr{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:700;color:#fff}
+.tlc{font-size:.9rem;color:#00ff88;margin-top:2px}
+.tld{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#00e5ff;padding:3px 9px;border:1px solid rgba(0,229,255,0.2);border-radius:4px;background:rgba(0,229,255,0.04);height:fit-content}
+.tlt{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:#71717a;margin-top:4px}
+.tlp{list-style:none;margin-top:12px}
+.tlp li{padding-left:16px;margin-bottom:8px;color:#a1a1aa;font-size:.88rem;line-height:1.6;position:relative}
+.tlp li::before{content:'>';position:absolute;left:0;color:#00ff88;font-family:'JetBrains Mono',monospace}
+
+.pgrid{display:grid;gap:16px}
+.pc{background:#0e0e1a;border:1px solid #1e1e2e;border-radius:10px;padding:24px;transition:.25s}
+.pc:hover{border-color:rgba(0,255,136,0.2);transform:translateY(-2px)}
+.pt{display:flex;justify-content:space-between;margin-bottom:12px}
+.pn{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;color:#fff}
+.pd{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#71717a}
+.pde{color:#a1a1aa;margin-bottom:16px;font-size:.88rem;line-height:1.65}
+.ptags{display:flex;gap:6px;flex-wrap:wrap}
+.tg2{font-family:'JetBrains Mono',monospace;font-size:.65rem;padding:3px 9px;border-radius:4px;background:rgba(0,255,136,0.06);color:#00ff88;border:1px solid rgba(0,255,136,0.1)}
+
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sc{background:#080810;border:1px solid #1e1e2e;border-radius:10px;padding:20px;transition:.2s}
+.sc:hover{border-color:rgba(0,255,136,0.12)}
+.sc h3{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#00ff88;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:14px}
+.si{display:flex;flex-wrap:wrap;gap:6px}
+.sp{font-size:.8rem;padding:4px 11px;border-radius:5px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);color:#a1a1aa;transition:.2s}
+.sp:hover{border-color:#00ff88;color:#00ff88}
+
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cc2{display:flex;align-items:center;gap:12px;background:#0e0e1a;border:1px solid #1e1e2e;border-radius:8px;padding:16px 18px;transition:.2s;text-decoration:none;color:#e4e4e7}
+.cc2:hover{border-color:rgba(0,229,255,0.2);transform:translateX(3px)}
+.sec.dark .cc2{background:#080810}
+.ci{width:36px;height:36px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:1rem;background:rgba(0,229,255,0.07);border:1px solid rgba(0,229,255,0.12);flex-shrink:0}
+.cn{font-size:.85rem}
+.aw-icon{background:rgba(255,107,53,0.07);border:1px solid rgba(255,107,53,0.12)}
+.aw-card{border:1px solid #1e1e2e}
+.aw-card:hover{border-color:rgba(255,107,53,0.25);transform:translateX(3px)}
+
+.cbox{background:#080810;border:1px solid #1e1e2e;border-radius:14px;padding:48px;text-align:center}
+.cbox h2{font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:#fff;margin-bottom:12px}
+.cbox>p{color:#a1a1aa;margin-bottom:28px}
+.cls{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.cl{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:.8rem;border:1px solid #1e1e2e;color:#e4e4e7;transition:.2s}
+.cl:hover{border-color:#00ff88;color:#00ff88;background:rgba(0,255,136,0.04)}
+
+.foot{padding:24px 28px;border-top:1px solid #1e1e2e;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#71717a;flex-wrap:wrap;gap:10px}
+.foot a{color:#00ff88;margin-left:14px;cursor:pointer}
+.foot a:hover{text-decoration:underline}
+
+@media(max-width:768px){
+  .nav-r{display:none}
+  .hero h1{font-size:2.4rem}
+  .stats{grid-template-columns:1fr 1fr}
+  .agrid,.sgrid,.cgrid{grid-template-columns:1fr}
+  .tlh{flex-direction:column}
+  .cbox{padding:32px 18px}
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="logo"><span>~/</span>shubhang<i class="blink"></i></div>
+  <div class="nav-r">
+    <a onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">about</a>
+    <a onclick="document.getElementById('exp').scrollIntoView({behavior:'smooth'})">experience</a>
+    <a onclick="document.getElementById('proj').scrollIntoView({behavior:'smooth'})">projects</a>
+    <a onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">skills</a>
+    <a onclick="document.getElementById('certs').scrollIntoView({behavior:'smooth'})">certs</a>
+    <a onclick="document.getElementById('awards').scrollIntoView({behavior:'smooth'})">awards</a>
+    <a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">contact</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="htag"><span class="dot"></span> Available for opportunities</div>
+    <h1>I build<br>infrastructure<br>that scales.</h1>
+    <p><b>DevOps Engineer</b> crafting CI/CD pipelines, containerized deployments, and cloud infrastructure on AWS — with zero-downtime, every time.</p>
+    <div class="btns">
+      <a href="mailto:Shubhangtripathi809@gmail.com" class="bp">Get in Touch</a>
+      <a class="bs" onclick="document.getElementById('proj').scrollIntoView({behavior:'smooth'})">View Projects</a>
+    </div>
+    <div class="term">
+      <div class="tbar"><span class="tdi tr"></span><span class="tdi ty"></span><span class="tdi tgg"></span><span class="ttl">shubhang@devops — zsh</span></div>
+      <div class="tbody">
+        <span class="cd"># Deploy production with zero downtime</span><br>
+        <span class="cg">$</span> docker compose <span class="ccy">-f</span> <span class="co">docker-compose.prod.yml</span> up <span class="ccy">-d --build</span><br>
+        <span class="cg">$</span> aws ec2 describe-instances <span class="ccy">--filters</span> <span class="co">"Name=tag:env,Values=prod"</span><br>
+        <span class="cg">$</span> nginx <span class="ccy">-t</span> &amp;&amp; systemctl reload nginx<br>
+        <span class="cd"># All systems operational</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="st"><div class="sn">100+</div><div class="sl">Users Served</div></div>
+    <div class="st"><div class="sn">60%</div><div class="sl">Faster Deploys</div></div>
+    <div class="st"><div class="sn">99.9%</div><div class="sl">Uptime</div></div>
+    <div class="st"><div class="sn">0</div><div class="sl">Downtime Deploys</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="sec" id="about">
+  <div class="wrap">
+    <div class="lab">About</div>
+    <div class="stit">The engineer behind the pipeline.</div>
+    <div class="agrid">
+      <div class="atxt">
+        <p>I'm <b>Shubhang Tripathi</b> — a DevOps Engineer at <b>Lensvox Software</b>, based in Noida. I manage production multi-tenant SaaS platforms, build automated CI/CD pipelines, and architect cloud infrastructure that doesn't go down.</p>
+        <p>With a B.Tech in Information Technology from <b>ABES Engineering College</b>, I've gone from containerizing my first app to managing production deployments serving 100+ users across multiple organizations.</p>
+        <p>I think in Docker containers, dream in YAML, and measure success in uptime percentages.</p>
+      </div>
+      <div class="icard">
+        <h3>// Quick Info</h3>
+        <div class="ir"><span class="ik">Name</span><span class="iv">Shubhang Tripathi</span></div>
+        <div class="ir"><span class="ik">Location</span><span class="iv">Noida, UP, India</span></div>
+        <div class="ir"><span class="ik">Email</span><span class="iv"><a href="mailto:Shubhangtripathi809@gmail.com">Shubhangtripathi809@gmail.com</a></span></div>
+        <div class="ir"><span class="ik">Phone</span><span class="iv"><a href="tel:+919555986795">+91 9555986795</a></span></div>
+        <div class="ir"><span class="ik">LinkedIn</span><span class="iv"><a href="https://www.linkedin.com/in/shubhang-tripathi-44a81525b" target="_blank">LinkedIn Profile</a></span></div>
+        <div class="ir"><span class="ik">GitHub</span><span class="iv"><a href="https://github.com/Shubhangtripathi809" target="_blank">GitHub Profile</a></span></div>
+        <div class="ir"><span class="ik">Degree</span><span class="iv">B.Tech IT — ABES EC</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="sec dark" id="exp">
+  <div class="wrap">
+    <div class="lab">Experience</div>
+    <div class="stit">Where I've shipped to production.</div>
+    <div class="tl">
+      <div class="tli act">
+        <div class="tlh">
+          <div><div class="tlr">DevOps Engineer</div><div class="tlc">Lensvox Software Pvt. Ltd</div></div>
+          <div><div class="tld">Jul 2025 - Present</div><div class="tlt">Full-time - Noida</div></div>
+        </div>
+        <ul class="tlp">
+          <li>Manage production multi-tenant SaaS platform (Dyuksa) serving 100+ users across 2 organizations with zero-downtime deployments.</li>
+          <li>Deployed multi-domain infrastructure (zanflow.lensvox.com, dyuksa.com) with SSL/TLS certificates and Nginx reverse proxy.</li>
+          <li>Built automated CI/CD pipeline using GitHub Actions, reducing deployment time by 60%.</li>
+          <li>Implemented multi-tenant database isolation using Django ORM with AWS RDS PostgreSQL.</li>
+          <li>Troubleshot production issues: 502 errors, migration conflicts, CORS/CSRF security, disk space optimization.</li>
+          <li>Containerized full-stack app (Django + React) using Docker Compose with Redis and PostgreSQL.</li>
+        </ul>
+      </div>
+      <div class="tli">
+        <div class="tlh">
+          <div><div class="tlr">DevOps Trainee</div><div class="tlc">Bidinn Hospitality</div></div>
+          <div><div class="tld">Apr 2024 - Jun 2025</div><div class="tlt">Internship - Noida</div></div>
+        </div>
+        <ul class="tlp">
+          <li>Managed Docker containers for microservices deployment in dev and testing environments.</li>
+          <li>Configured AWS services (EC2, VPC, ELB) ensuring 99.9% uptime for production workloads.</li>
+          <li>Automated deployment workflows using shell scripting, improving release cycle by 30%.</li>
+          <li>Implemented monitoring using AWS CloudWatch for proactive issue detection.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="sec" id="proj">
+  <div class="wrap">
+    <div class="lab">Projects</div>
+    <div class="stit">What I've built and deployed.</div>
+    <div class="pgrid">
+      <div class="pc">
+        <div class="pt"><div class="pn">Dyuksa — Multi-Tenant SaaS Platform</div><div class="pd">Present</div></div>
+        <div class="pde">Production-grade multi-tenant ERP/CRM with org-level data isolation serving 40+ projects and 119 tasks. Complete DevOps pipeline with Git workflows, Docker, GitHub Actions CI/CD, and AWS EC2.</div>
+        <div class="ptags"><span class="tg2">Docker</span><span class="tg2">AWS EC2</span><span class="tg2">RDS PostgreSQL</span><span class="tg2">Nginx</span><span class="tg2">GitHub Actions</span><span class="tg2">Django</span><span class="tg2">SSL/TLS</span></div>
+      </div>
+      <div class="pc">
+        <div class="pt"><div class="pn">Bidinn Blog Platform</div><div class="pd">Apr - Jun 2025</div></div>
+        <div class="pde">Responsive blog platform on Netlify with automated CI/CD from GitHub. Optimized build pipeline and caching, reducing deployment time by 40%.</div>
+        <div class="ptags"><span class="tg2">React</span><span class="tg2">Netlify</span><span class="tg2">GitHub Actions</span><span class="tg2">CI/CD</span></div>
+      </div>
+      <div class="pc">
+        <div class="pt"><div class="pn">Atom Creations</div><div class="pd">Jan - Mar 2025</div></div>
+        <div class="pde">B2B e-commerce website for wholesale distribution. Containerized full-stack app using Docker with automated deployment pipeline.</div>
+        <div class="ptags"><span class="tg2">React</span><span class="tg2">MongoDB</span><span class="tg2">Docker</span><span class="tg2">JavaScript</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="sec dark" id="skills">
+  <div class="wrap">
+    <div class="lab">Skills</div>
+    <div class="stit">My tech stack.</div>
+    <div class="sgrid">
+      <div class="sc">
+        <h3>DevOps and Cloud</h3>
+        <div class="si"><span class="sp">Docker</span><span class="sp">Docker Compose</span><span class="sp">GitHub Actions</span><span class="sp">AWS EC2</span><span class="sp">AWS RDS</span><span class="sp">AWS S3</span><span class="sp">AWS VPC</span><span class="sp">Load Balancer</span><span class="sp">Nginx</span><span class="sp">SSL/TLS</span></div>
+      </div>
+      <div class="sc">
+        <h3>Languages</h3>
+        <div class="si"><span class="sp">Python</span><span class="sp">JavaScript</span><span class="sp">C++</span><span class="sp">HTML</span><span class="sp">CSS</span><span class="sp">Shell Scripting</span></div>
+      </div>
+      <div class="sc">
+        <h3>OS and Tools</h3>
+        <div class="si"><span class="sp">Linux (Ubuntu)</span><span class="sp">Git</span><span class="sp">GitHub</span><span class="sp">SSH</span><span class="sp">Log Analysis</span><span class="sp">CloudWatch</span></div>
+      </div>
+      <div class="sc">
+        <h3>Backend and DBs</h3>
+        <div class="si"><span class="sp">Django</span><span class="sp">PostgreSQL</span><span class="sp">Redis</span><span class="sp">RESTful APIs</span><span class="sp">Multi-tenancy</span><span class="sp">Migrations</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div class="sec" id="certs">
+  <div class="wrap">
+    <div class="lab">Certifications</div>
+    <div class="stit">Credentials.</div>
+    <div class="cgrid">
+      <a href="https://drive.google.com/file/d/1TGN_KEISmKD6gO_LcGq4A9Cx6N5aaLho/view?usp=sharing" target="_blank" class="cc2"><div class="ci">&#127941;</div><div class="cn">AWS Cloud Practitioner Essentials</div></a>
+      <a href="https://drive.google.com/file/d/1GPDnYnFDGvscQqfat-CZfkwxVyUssuuT/view?usp=drive_link" target="_blank" class="cc2"><div class="ci">&#128274;</div><div class="cn">AWS Security Fundamentals (2nd Ed.)</div></a>
+      <a href="https://drive.google.com/file/d/1wnp6WcvEUS0W5VAXtucBR-i632Honc3O/view?usp=sharing" target="_blank" class="cc2"><div class="ci">&#128013;</div><div class="cn">PCAP: Python Essentials — Cisco</div></a>
+      <a href="https://drive.google.com/file/d/1PDsUw4fB1T8_g-xIyBkqg6Q5oTkns7S8/view?usp=sharing" target="_blank" class="cc2"><div class="ci">&#128187;</div><div class="cn">HackerRank — Problem Solving</div></a>
+    </div>
+  </div>
+</div>
+
+<!-- AWARDS (separate section) -->
+<div class="sec dark" id="awards">
+  <div class="wrap">
+    <div class="lab">Honors and Awards</div>
+    <div class="stit">Recognized for impact.</div>
+    <div class="cgrid">
+      <div class="cc2 aw-card" style="background:#080810"><div class="ci aw-icon">&#127942;</div><div class="cn">Top 10 Team — State-level Entrepreneurship and Innovation Competition</div></div>
+      <div class="cc2 aw-card" style="background:#080810"><div class="ci aw-icon">&#127919;</div><div class="cn">Entrepreneurship Award — IDE Bootcamp Surat, Gujarat</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="sec" id="contact">
+  <div class="wrap">
+    <div class="cbox">
+      <h2>Let's build something together.</h2>
+      <p>Got a DevOps challenge or a team that needs scaling? Let's talk.</p>
+      <div class="cls">
+        <a href="mailto:Shubhangtripathi809@gmail.com" class="cl">&#9993; Email</a>
+        <a href="tel:+919555986795" class="cl">&#9742; +91 9555986795</a>
+        <a href="https://www.linkedin.com/in/shubhang-tripathi-44a81525b" target="_blank" class="cl">in LinkedIn</a>
+        <a href="https://github.com/Shubhangtripathi809" target="_blank" class="cl">&#8984; GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <span>&#169; 2026 Shubhang Tripathi. Built with precision.</span>
+  <div>
+    <a href="https://www.linkedin.com/in/shubhang-tripathi-44a81525b" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Shubhangtripathi809" target="_blank">GitHub</a>
+    <a onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593; Top</a>
+  </div>
+</div>
+
+</body>
+</html>
